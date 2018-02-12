@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+	<title> Бикове и крави </title>
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+	<script src="JS/bulls.js"></script>
+
+</head>
+
+<body>
+	
+	<h1>Бикове и Крави</h1>
+	
+	<div style="float:center;">
+	<p id = "how_many">Колко цифри да бъде числото<br>
+
+	<p id = "radio_buttons">
+	<label><input type="radio" name="num" value="3" onclick="numbers = 3;">3</label> |
+	<label><input type="radio" name="num" value="4" checked="checked" onclick="numbers = 4;">4</label> |
+	<label><input type="radio" name="num" value="5" onclick="numbers = 5;">5</label> |
+	<label><input type="radio" name="num" value="6" onclick="numbers = 6;">6</label> |
+	<label><input type="radio" name="num" value="5" onclick="numbers = 7;">7</label> |
+	<label><input type="radio" name="num" value="6" onclick="numbers = 8;">8</label> |
+	<label><input type="radio" name="num" value="5" onclick="numbers = 9;">9</label> |
+	</p>
+
+
+	<input id = "buttons" type="button" value="Нова игра" onclick="newgame();">
+	<input id = "buttons" type="button" value="Изчистване" onclick="restart();"><br>
+
+	</p>
+
+	<strong>Отгатни числото:</strong><br>
+	<input type="number" min="0" onkeydown="if (event.keyCode == 13) ok()" id = "input" name="userinput" value="" size="10" maxlength="10" style="font-family: Courier New,Courier, Monospaced;">
+	<input type="button" value="OK" onclick="ok();">
+	<input type="button" value="Помощ" onclick="help_me();">
+	<input type="button" value="Предавам се" onclick="stop();"><br>
+	<textarea name="write" id="result" rows="16" cols="50"></textarea>
+	</div>
+</body>
+</html>
